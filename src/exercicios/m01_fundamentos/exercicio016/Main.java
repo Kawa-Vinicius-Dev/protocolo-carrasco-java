@@ -16,5 +16,5 @@ public class Main {
     }
     public static String podeDirigir(byte idade){
         return idade >= 18 ? "Pode dirigir" : "Não pode dirigir";
-    };
+    }
 }
