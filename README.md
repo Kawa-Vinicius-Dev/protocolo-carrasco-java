@@ -1,6 +1,6 @@
 # Protocolo Carrasco — Java Backend Júnior
 
-Minha trilha de estudos para chegar pronto ao Spring Boot: Java de verdade, testes, SQL, JDBC e HTTP — sem framework e sem IA escrevendo código.
+Esse repositório foi uma ideia. Eu estava estudando Spring Boot e vi a necessidade de voltar para aprender alguns conceitos. O objetivo é chegar preparado para o Spring Boot com fundamentos de Java, testes, SQL, JDBC e HTTP — sem framework e sem IA escrevendo código.
 
 📄 **[Abrir a lista completa de exercícios (PDF)](./protocolo_carrasco_java_backend.pdf)** — 247 exercícios, cada um com o que fazer, exemplo e a pegadinha de entrevista.
 
@@ -19,9 +19,9 @@ Minha trilha de estudos para chegar pronto ao Spring Boot: Java de verdade, test
 
 | Módulo | Exercícios | Status |
 | --- | --- | --- |
-| Fundamentos e lógica | 1–30 | ✅ feito (com correções pendentes) |
-| Correções dos bugs de 1–30 | C1–C10 | ⬜ |
-| Ferramentas: terminal, Git, Maven, stack trace, debugger | 31–41 | ⬜ |
+| Fundamentos e lógica | 1–30 | ✅ feito |
+| Correções dos bugs de 1–30 | C1–C10 | ✅ feito |
+| Ferramentas: terminal, Git, Maven, stack trace, debugger | 31–41 | 🟡 em andamento |
 | JUnit 5 | 42–51 | ⬜ |
 | Strings e Arrays com TDD | 52–73 | ⬜ |
 | POO (domínio de loja) + BigDecimal | 74–97 | ⬜ |
@@ -43,14 +43,24 @@ Problemas resolvidos (LeetCode / HackerRank): **0 / 60**
 
 ## Estrutura
 
-Cada módulo vira uma pasta com um projeto Maven próprio (código em `src/main/java`, testes em `src/test/java`). Rodar os testes de um módulo:
-
-```bash
-cd <modulo>
-mvn test
-```
+Dentro de `src/exercicios`, as pastas estão organizadas por módulo (`m01_fundamentos`, `m02_ferramentas`, ...). Dentro de cada módulo ficam os exercícios realizados do Protocolo Carrasco, um por pasta (`exercicio001`, `exercicio002`, ...).
 
 Consultas SQL ficam em `sql/`, uma por arquivo, numeradas pelo exercício (`S17-group-by.sql`).
+
+## Como compilar e rodar
+
+Na raiz do repositório:
+
+```bash
+javac -d out src/exercicios/m01_fundamentos/exercicio030/Main.java
+java -cp out exercicios.m01_fundamentos.exercicio030.Main
+```
+
+Para outro exercício, troque `m01_fundamentos/exercicio030` (e o pacote correspondente) pelo módulo e número desejados.
+
+## Testes
+
+Em breve, com Maven e JUnit 5 (exercícios 37 e 42).
 
 ## Stack
 
