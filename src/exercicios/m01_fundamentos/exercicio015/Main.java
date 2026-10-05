@@ -15,7 +15,9 @@ public class Main {
             System.out.println(podeVotar(idade));
 
         } catch (InputMismatchException e) {
-            System.out.println("Digite uma idade válida.");
+            System.out.println("Digite uma idade válida!");
+        }catch (IllegalArgumentException e) {
+            System.out.println("Digite um número válido!");
         }
     }
 
