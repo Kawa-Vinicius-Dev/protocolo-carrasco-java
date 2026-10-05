@@ -34,7 +34,7 @@ public class Main {
     }
 
     public static double calcularPercentual(double desconto) {
-        if (desconto <= 0) {
+        if (desconto < 0) {
             throw new IllegalArgumentException("Desconto invalido!");
         }
         return desconto / 100;
